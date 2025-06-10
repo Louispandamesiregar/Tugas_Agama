@@ -1,0 +1,112 @@
+/* style.css */
+
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Gaya Umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #3b5998, #4a69bd);
+    color: #fff;
+    height: 273.35px;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.3em;
+    font-weight: 600;
+}
+
+header p {
+    margin: 4px 0;
+    font-weight: 400;
+}
+
+
+/* ========================================================= */
+/* === EFEK HOVER NAVBAR BARU (ANIMASI LATAR BELAKANG) === */
+/* ========================================================= */
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px; /* Memberi ruang agar terlihat seperti tombol */
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 5px; /* Membuat sudut membulat */
+    
+    /* Transisi untuk membuat perubahan warna latar menjadi mulus */
+    transition: background-color 0.3s ease;
+}
+
+/* Saat di-hover, ubah warna latar belakang */
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Warna putih semi-transparan */
+}
+/* ========================================================= */
+
+
+/* Konten Utama */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Section */
+section {
+    margin-bottom: 35px;
+}
+
+section h2 {
+    color: #2c3e50;
+    border-left: 6px solid #4a69bd;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+section p,
+section ul {
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/* List Style */
+ul {
+    padding-left: 25px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #3b5998, #4a69bd);
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
